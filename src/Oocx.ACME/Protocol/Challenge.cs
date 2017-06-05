@@ -21,7 +21,7 @@ namespace Oocx.ACME.Protocol
         public Error Error { get; set; }
 
         [JsonProperty("tls")]
-        public bool Tls { get; set; }
+        public bool Tls { get; set; } = true;
 
         [JsonProperty("validationRecord")]
         public ValidationRecord[] ValidationRecord { get; set; }

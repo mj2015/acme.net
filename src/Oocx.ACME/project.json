@@ -18,18 +18,6 @@
   },
 
   "frameworks": {
-    "dnx46": {
-      "compilationOptions": {
-        "optimize": false,
-        "define": [ "DEBUG" ]
-      }
-    },
-    "net46": { },
-    "dnxcore50": {
-      "dependencies": {
-        "Microsoft.NETCore": "5.0.1-beta-23516",
-        "System.Security.AccessControl": "4.0.0-beta-23516",                
-      }
-    }
+    "net46": { }
   }
 }

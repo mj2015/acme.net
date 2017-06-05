@@ -2,102 +2,6 @@
   "locked": false,
   "version": 2,
   "targets": {
-    "DNX,Version=v4.6": {
-      "Microsoft.AspNet.WebApi.Client/5.2.3": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "6.0.4"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net45/System.Net.Http.Formatting.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Net.Http.Formatting.dll": {}
-        }
-      },
-      "Microsoft.Web.Administration/7.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net20/Microsoft.Web.Administration.dll": {}
-        },
-        "runtime": {
-          "lib/net20/Microsoft.Web.Administration.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Oocx.ACME/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Newtonsoft.Json": "8.0.2",
-          "Oocx.ACME.Common": null,
-          "Oocx.Asn1PKCS": null,
-          "System.Linq": "4.0.1-beta-23409",
-          "System.Net.Http": "4.0.1-beta-23409",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23409"
-        }
-      },
-      "Oocx.ACME.Common/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6"
-      },
-      "Oocx.Asn1PKCS/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6"
-      },
-      "System.Linq/4.0.1-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Net.Http/4.0.1-beta-23409": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Runtime/4.0.21-beta-23516": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Threading/4.0.11-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/net46/_._": {}
-        },
-        "runtime": {
-          "lib/net46/_._": {}
-        }
-      }
-    },
     ".NETFramework,Version=v4.6": {
       "Microsoft.AspNet.WebApi.Client/5.2.3": {
         "type": "package",
@@ -153,222 +57,6 @@
       "Oocx.Asn1PKCS/0.0.0-beta": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6"
-      },
-      "System.Linq/4.0.1-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Net.Http/4.0.1-beta-23409": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Runtime/4.0.21-beta-23516": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Threading/4.0.11-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/net46/_._": {}
-        },
-        "runtime": {
-          "lib/net46/_._": {}
-        }
-      }
-    },
-    "DNX,Version=v4.6/win7-x86": {
-      "Microsoft.AspNet.WebApi.Client/5.2.3": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "6.0.4"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net45/System.Net.Http.Formatting.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Net.Http.Formatting.dll": {}
-        }
-      },
-      "Microsoft.Web.Administration/7.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net20/Microsoft.Web.Administration.dll": {}
-        },
-        "runtime": {
-          "lib/net20/Microsoft.Web.Administration.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Oocx.ACME/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Newtonsoft.Json": "8.0.2",
-          "Oocx.ACME.Common": null,
-          "Oocx.Asn1PKCS": null,
-          "System.Linq": "4.0.1-beta-23409",
-          "System.Net.Http": "4.0.1-beta-23409",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23409"
-        }
-      },
-      "Oocx.ACME.Common/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6"
-      },
-      "Oocx.Asn1PKCS/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6"
-      },
-      "runtime.win7.System.Net.Http/4.0.1-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/dotnet/_._": {}
-        }
-      },
-      "runtime.win7.System.Threading/4.0.11-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/dotnet/_._": {}
-        }
-      },
-      "System.Linq/4.0.1-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Net.Http/4.0.1-beta-23409": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Runtime/4.0.21-beta-23516": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Threading/4.0.11-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/net46/_._": {}
-        },
-        "runtime": {
-          "lib/net46/_._": {}
-        }
-      }
-    },
-    "DNX,Version=v4.6/win7-x64": {
-      "Microsoft.AspNet.WebApi.Client/5.2.3": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "6.0.4"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net45/System.Net.Http.Formatting.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Net.Http.Formatting.dll": {}
-        }
-      },
-      "Microsoft.Web.Administration/7.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net20/Microsoft.Web.Administration.dll": {}
-        },
-        "runtime": {
-          "lib/net20/Microsoft.Web.Administration.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Oocx.ACME/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Newtonsoft.Json": "8.0.2",
-          "Oocx.ACME.Common": null,
-          "Oocx.Asn1PKCS": null,
-          "System.Linq": "4.0.1-beta-23409",
-          "System.Net.Http": "4.0.1-beta-23409",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23409"
-        }
-      },
-      "Oocx.ACME.Common/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6"
-      },
-      "Oocx.Asn1PKCS/0.0.0-beta": {
-        "type": "project",
-        "framework": "DNX,Version=v4.6"
-      },
-      "runtime.win7.System.Net.Http/4.0.1-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/dotnet/_._": {}
-        }
-      },
-      "runtime.win7.System.Threading/4.0.11-beta-23409": {
-        "type": "package",
-        "compile": {
-          "ref/dotnet/_._": {}
-        }
       },
       "System.Linq/4.0.1-beta-23409": {
         "type": "package",
@@ -689,7 +377,7 @@
     "runtime.win7.System.Net.Http/4.0.1-beta-23409": {
       "type": "package",
       "serviceable": true,
-      "sha512": "PsM0ItHJ6ahnDzXPXJeCQpKwL/VOQ4GjFiI4Y+HCkHZlaTSwJayoLuroDU545G+cvEtmbMinLNDqG5HdKQExMw==",
+      "sha512": "vRSQXNQdlzx+0+6BTI9ExF37+Eo2DkuRTxTAb+qFNF34soqS3Lgt8d5gr097D/zDkSdP05ssSbSEaiSMv51K/Q==",
       "files": [
         "ref/dotnet/_._",
         "runtime.win7.System.Net.Http.4.0.1-beta-23409.nupkg",
@@ -789,7 +477,7 @@
     "System.Net.Http/4.0.1-beta-23409": {
       "type": "package",
       "serviceable": true,
-      "sha512": "h9CPYbGzH/9faYD24qLNBY+/dH8F67AktW3UvrEJR7Xan3bzXKJd5Po/3+qRswNsRUH2P/HBSK5fZE3CKVmhxg==",
+      "sha512": "FzfaQV17DmYxTH2xcpF4PfeCVcEmDf1MvE956I4/FDxiPFKaePXLv+dDbciuMl7C3bhqeBiC7ws0/t6AsiAiXA==",
       "files": [
         "lib/net45/_._",
         "lib/win8/_._",
@@ -808,7 +496,7 @@
     "System.Runtime/4.0.21-beta-23516": {
       "type": "package",
       "serviceable": true,
-      "sha512": "ToYWwDgwR8fR9/8aaV+7PMFBfG2tEgGWED0l9OC9DQieaKEMAzXV3c6fOkK8FTd9YPjFcYnvx73tg21w6GuNDA==",
+      "sha512": "R174ctQjJnCIVxA2Yzp1v68wfLfPSROZWrbaSBcnEzHAQbOjprBQi37aWdr5y05Pq2J/O7h6SjTsYhVOLdiRYQ==",
       "files": [
         "lib/DNXCore50/System.Runtime.dll",
         "lib/MonoAndroid10/_._",
@@ -911,7 +599,6 @@
       "Oocx.ACME ",
       "Oocx.ACME.Common "
     ],
-    "DNX,Version=v4.6": [],
     ".NETFramework,Version=v4.6": []
   }
 }

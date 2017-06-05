@@ -18,11 +18,5 @@
   },
 
   "frameworks": {
-    "dnx46": {
-      "compilationOptions": {
-        "optimize": false,
-        "define": [ "DEBUG" ]
-      }
-    }
   }
 }

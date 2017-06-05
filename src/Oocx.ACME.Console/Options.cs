@@ -35,8 +35,14 @@ namespace Oocx.ACME.Console
         [Option('n', "accountKeyName", HelpText = "The name of the key file or key container used to store the acme registration key.", Default = "acme-key")]
         public string AccountKeyName { get; set; }
 
-        [Option('c', "challengeProvider", HelpText = "The type of web server integration to use for ACME challenges. Supported types are: 'manual-http-01' (no integration with http-01 challenge), 'iis-http-01' (IIS with http-01 challenge)", Default = "iis-http-01")]
+        [Option('c', "challengeProvider", HelpText = "The type of web server integration to use for ACME challenges. Supported types are: 'dir-http-01' (directory location integration with http-01 challenge), 'manual-http-01' (no integration with http-01 challenge), 'iis-http-01' (IIS with http-01 challenge)", Default = "iis-http-01")]
         public string ChallengeProvider { get; set; }
+
+        [Option('o', "outputLocation", HelpText = "The Path for the web server known location file to be placed.")]
+        public string OutputLocation { get; set; }
+
+        [Option('x', "expandDirectory", HelpText = "If true, the outputLocation has the /.well-known/acme-challenge directories added.", Default = true)]
+        public bool ExpandDirectory { get; set; }
 
         [Option('i', "serverConfigurationProvider", HelpText = "The type of web server configuration to use to install and configure certificates. Supported types are: 'manual' (no integration), 'iis' (installs certificates to localmachine\\my and configures IIS bindings)", Default = "iis")]
         public string ServerConfigurationProvider { get; set; }

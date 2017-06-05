@@ -2,6 +2,7 @@
 using Autofac;
 using Oocx.ACME.Client;
 using Oocx.ACME.IIS;
+using Oocx.ACME.OptionsHack;
 using Oocx.ACME.Services;
 using Oocx.Asn1PKCS.Asn1BaseTypes;
 using Oocx.Asn1PKCS.PKCS10;
@@ -21,6 +22,9 @@ namespace Oocx.ACME.Console
                 .WithParameter("keyName", options.AccountKeyName )
                 .SingleInstance();
 
+            OptionsGlobal.Instance.DirectoryRoot = options.OutputLocation;
+            OptionsGlobal.Instance.DirectoryExpand = options.ExpandDirectory;
+
             if ("user".Equals(options.AccountKeyContainerLocation) || "machine".Equals(options.AccountKeyContainerLocation))
             {
                 builder.RegisterType<KeyContainerStore>().As<IKeyStore>().WithParameter("storeType", options.AccountKeyContainerLocation);
@@ -30,9 +34,13 @@ namespace Oocx.ACME.Console
                 builder.RegisterType<FileKeyStore>().As<IKeyStore>().WithParameter("basePath", options.AccountKeyContainerLocation ?? Environment.CurrentDirectory);
             }
 
-            if ("manual-http-01".Equals(options.ChallengeProvider, StringComparison.OrdinalIgnoreCase))
+            if ("dir-http-01".Equals(options.ChallengeProvider, StringComparison.OrdinalIgnoreCase))
             {
-                builder.RegisterType<ManualChallengeProvider>().As<IChallengeProvider>();                
+                builder.RegisterType<DirectoryChallengeProvider>().As<IChallengeProvider>();                
+            }
+            else if ("manual-http-01".Equals(options.ChallengeProvider, StringComparison.OrdinalIgnoreCase))
+            {
+                builder.RegisterType<ManualChallengeProvider>().As<IChallengeProvider>();
             }
             else if ("iis-http-01".Equals(options.ChallengeProvider, StringComparison.OrdinalIgnoreCase))
             {

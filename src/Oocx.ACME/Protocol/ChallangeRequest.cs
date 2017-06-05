@@ -11,7 +11,7 @@ namespace Oocx.ACME.Protocol
         public string Type { get; set; }
 
         [JsonProperty("tls")]
-        public bool Tls { get; set; }
+        public bool Tls { get; set; } = true;
 
         [JsonProperty("token")]
         public string Token { get; set; }
